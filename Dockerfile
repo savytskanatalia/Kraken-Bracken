@@ -28,8 +28,8 @@ RUN ln -s /opt/kraken2/kraken2-inspect /usr/local/bin/kraken2-inspect
 RUN cd tmp ; wget https://github.com/savytskanatalia/Kraken-Bracken/raw/master/Bracken-master.zip 
 RUN cd tmp ; unzip Bracken-master.zip  
 RUN mkdir -p /opt/bracken 
-RUN cd tmp/Bracken-master ; cp bracken /opt/bracken/ ; cp bracken-build /opt/bracken/ ; cp -R src/* /opt/bracken/ 
-RUN cd /opt/bracken/; make 
+RUN cd tmp/Bracken-master ; cp bracken /opt/bracken/ ; cp bracken-build /opt/bracken/ ; cp -R src/ /opt/bracken/ 
+RUN cd /opt/bracken/src/ ; make 
 WORKDIR /data
  
 
