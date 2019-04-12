@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Paul Manninger, paul.manninger@inspection.gc.ca
+MAINTAINER Natalia Savytska
 
 #Environmental Variables/Paths
 ENV DEBIAN_FRONTEND=noninteractive
